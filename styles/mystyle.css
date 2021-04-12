@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.navbar{
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navbar_container{
+    display: flex;
+    justify-content: flex-start;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+#logo{
+    background-image: linear-gradient(to top, #08ffc9 20%, #009bca 90%);
+    /* background-size: 100%; */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    cursor: default;
+    text-decoration: none;
+}
+#git{
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 25px;
+}
+#git:hover{
+    background: #08ffc9;
+    transition: all 0.1s ease;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+}
+
+@media screen and (max-width: 960px){
+    .navbar_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        padding: 0;
+    }
+    #git{
+        padding-left: 25px;
+        position: relative;
+        right: 25%;
+    }
+}
+.main{
+    background-color: #141414;
+}
+.main_container{
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #141414;
+    z-index: 1; 
+    padding: 0 48px;
+}
+.main_content h1{
+    padding-top: 2rem;
+    font-size: 4rem;
+    text-align: center;
+    background-image: linear-gradient(to top, #08ffc9 20%, #009bca 90%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+
+}
+.main_content h2{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 1.01rem;
+    text-align: center;
+    background-image: linear-gradient(to top, #06a4ff 10%, #2fc0c5 20%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+
+}
+.main_content p{
+    margin-top: 1rem;
+    font-size: 1rem;
+    /* font-weight: 700; */
+    color: #fff;
+}
+/* responsiveness of content */
+@media screen and (max-width: 480px){
+    .navbar_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+    }
+    #logo{
+        font-size: 1.2rem;
+        padding-left: -25;
+    }
+    #git{
+        font-size: 1.6rem;
+        position: static;
+        padding-left: 25px;
+    }
+    .main_content h1{
+        font-size: 2rem;
+    }
+    .main_content h2{
+        font-size: 0.9rem;
+    }
+    .main_content p{
+        font-size: 2.6vh;
+    }
+}
