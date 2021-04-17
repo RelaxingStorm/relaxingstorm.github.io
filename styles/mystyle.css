@@ -26,7 +26,7 @@
 }
 #logo{
     background-image: linear-gradient(to top, #08ffc9 20%, #009bca 90%);
-    /* background-size: 100%; */
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -48,8 +48,9 @@
     padding-right: 25px;
 }
 #git:hover{
-    background: #08ffc9;
     transition: all 0.1s ease;
+    background: #08ffc9;
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -87,6 +88,7 @@
     font-size: 4rem;
     text-align: center;
     background-image: linear-gradient(to top, #08ffc9 20%, #009bca 90%);
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -99,6 +101,7 @@
     font-size: 1.01rem;
     text-align: center;
     background-image: linear-gradient(to top, #06a4ff 10%, #2fc0c5 20%);
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
